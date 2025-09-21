@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>To-Do List App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="body">
+        <div class="container">
+           <div class="todo-list">
+            <h2>To-Do List <img ></h2>
+            <div class="row">
+            <input placeholder="Add List" id="input"> 
+<button onclick="add()">ADD</button><br>
+</div>
+<ul id="list">
+    
+        <li >   
+            Hello    
+            <button class="btn" onclick="deleteitem(event)">Delete</button>
+        </li> 
+        
+    </ul>   
+<script>  
+    var input=document.getElementById("input")
+    var ul=document.getElementById("list")
+
+    function add(){
+       var list=document.createElement("li")
+       list.innerHTML=input.value + "<button onclick='deleteitem(event)'>Delete</button>"
+       ul.append(list)
+    }
+    function deleteitem(event){
+      event.target.parentElement.remove()
+    }
+</script>
+
+
+      </div>
+        </div>
+    </body>
+</html>
