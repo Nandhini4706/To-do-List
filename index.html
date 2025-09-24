@@ -15,9 +15,9 @@
 </div>
 <ul id="list">
     
-        <li >   
-            Hello    
-            <button onclick="deleteitem(event)">Delete</button>
+        <li>   
+                HELLO
+            <button class="del" onclick="deleteitem(event)">Delete</button>
         </li> 
         
     </ul>   
@@ -29,6 +29,7 @@
        var list=document.createElement("li")
        list.innerHTML=input.value + "<button onclick='deleteitem(event)'>Delete</button>"
        ul.append(list)
+       input.value="";
     }
     function deleteitem(event){
       event.target.parentElement.remove()
