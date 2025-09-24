@@ -7,14 +7,14 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: rgb(46, 0, 110);
+    background: rgb(6, 1, 56);
     padding: 10px;
     align-items: center;
 }
 .todo-list{
     width: 100%;
     max-width: 540px;
-    background: rgb(200, 129, 165);
+    background: rgb(149, 107, 129);
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
